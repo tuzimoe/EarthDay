@@ -5,6 +5,7 @@
 <title>Earth Day</title>
 <script src="//moe-blog.oss-cn-hongkong.aliyuncs.com/typinyin.js"></script>
 <link rel="stylesheet" href="//moe-blog.oss-cn-hongkong.aliyuncs.com/typinyin.css">
+<link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
@@ -15,20 +16,17 @@
 		demo.setOptions({
 			sentences: [
 				{
-					ch: ["这",{pause: 1500}/* 暂停1500毫秒 */,"是","一个","实例",{del: 2}/* 删除两个字符 */,"示例"],
-					py: ["zhe","","shi","yige","shili","","shili"],
+					ch: ["地",{pause: 1500}/* 暂停1500毫秒 */,"球","母亲,"声日",{del: 2}/* 删除两个字符 */,"生日","快乐"],
+					py: ["di","","qiu","muqin","shengri","","shengri","kuaile"],
 				}, {
-					ch: ["This is an example."],
-					py: ["This is an exaaaaaaaa\b\b\b\b\b\b\bmple."], // 用"\b" 来删除一个字符
+					ch: ["Happy Birthday Earth."],
+					py: ["Haaaaaaaaaa\b\b\b\b\b\b\b\b\bppy Birthday Earth."], // 用"\b" 来删除一个字符
 				}, {
-					ch: ["完全","无需","jQuery"],
-					py: ["wanquan","wuxu","jQuery"],
+					ch: ["程序员","少看","视频"],
+					py: ["chengxuyuan","shaokan","shiping"],
 				}, {
-					ch: ["让","输入","打动","你的","心","\b","❤"], // 用"\b" 来删除一个字符
-					py: [["ranfff",{pause: 281},{del: 3}/* 暂停281毫秒后删除三个字符 */,"g"],"shuru","dadong","nide","xin","","xin"],
-				}, {
-					ch: ["赶紧","尝试一下","吧","！"],
-					py: ["ganjin","changshiyixia","ba","！"]
+					ch: ["多","写","代码","心","\b","❤""！"],
+					py: ["duo","xie","daima","xin","","xin","！"]
 				}
 			], // 需要输入的句子
 			startDelay: 1000, // 启动延时，以毫秒记
@@ -39,7 +37,7 @@
 			loop: false, // 是否循环播放
 		});
 		demo.finished = function() {
-			console.log("Typinyin.js Demo 演示完毕！");
+			console.log("地球母亲生日快乐！");
 		}; // 输入完毕时执行，loop 为 true 的时无效
 		demo.init(); // 初始化并开始打字
 	}
